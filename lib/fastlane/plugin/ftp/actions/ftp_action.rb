@@ -47,7 +47,7 @@ module Fastlane
           finished = ((transferred.to_f / filesize.to_f) * 30).to_i
           not_finished = 30 - finished
           print "\r"
-          print "%3i %" % percent
+          print "%3i %%" % percent
           print "["
           finished.downto(1) { |n| print "=" }
           print ">"
